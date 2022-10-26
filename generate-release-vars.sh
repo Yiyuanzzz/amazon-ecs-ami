@@ -70,18 +70,6 @@ readonly ami_name_al2_kernel5dot10 ami_name_al2_arm ami_name_al2_x86 ami_name_al
 
 cat >|release.auto.pkrvars.hcl <<EOF
 ami_version          = "$ami_version"
-@@ -75,6 +77,7 @@ containerd_version   = "1.4.13"
-source_ami_al1       = "$ami_name_al1"
-source_ami_al2       = "$ami_name_al2_x86"
-source_ami_al2arm    = "$ami_name_al2_arm"
-source_ami_al2kernel5dot10  = "$ami_name_al2_kernel5dot10"
-source_ami_al2022    = "$ami_name_al2022_x86"
-source_ami_al2022arm = "$ami_name_al2022_arm"
-kernel_version_al2022    = "$kernel_version_al2022_x86"
-
-
-cat >|release.auto.pkrvars.hcl <<EOF
-ami_version          = "$ami_version"
 ecs_agent_version    = "$agent_version"
 ecs_init_rev         = "$ecs_init_rev"
 docker_version       = "20.10.13"
